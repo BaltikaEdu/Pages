@@ -1,0 +1,298 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1440px;
+    font-family: font, sans-serif;
+}
+
+/* glob  */
+.container{
+    width: 1440px;
+    margin: 0 auto;
+
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset { 
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flex { 
+    display: flex;
+}
+/* home header */
+
+.header-container{
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 100px;
+    height: 80px ;
+    background-color: #84FAB0;
+    align-items: center;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+
+.home-logo{
+    margin-right: 414px;
+}
+
+.header-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.header-nav{
+    margin-right: 414px;
+}
+
+.btn{
+    background-color: #292929;
+    padding: 12px 24px;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    /* -webkit-text-stroke: 1px #000000;
+    text-stroke: 1px #000000; */
+}
+
+
+/*********************** auth **************************/
+
+/* left part */
+
+.auth-image-part{
+    background-color: #353945;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+ 
+}
+
+.auth-logo{
+    margin-bottom: 80px;
+    background-color: #FCFCFD;
+    display: inline-block;
+    width: 178px;
+    height: 66px;
+    border-radius: 90px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 25px 0;
+
+}
+.wrapper-image-icon{
+    padding-left: 102px;
+    padding-top: 52px;
+}
+ 
+.icon-star{
+    margin-right: 5px;
+}
+
+.auth-image-descr{
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.auth-image-title{
+    margin: 0;
+    margin-bottom: 35px;
+    color: #fff;
+}
+.auth-image-text{
+    margin: 0;
+    margin-bottom: 135px;
+    color: #fff;
+}
+.fig{
+    margin: 0;
+
+}
+
+
+/* right part */
+
+.auth-part{
+    width: 100%;
+
+}
+.auth-part-container{
+    padding: 104px 168px 0 133px;
+
+}
+.auth-title{
+    margin: 0;
+    margin-bottom: 12px;
+}
+.auth-text{
+    margin: 0;
+    margin-bottom: 54px;
+}
+
+.login-field-wrapper{
+    width: 100%;
+}
+
+.auth-login-label{
+    display: block;
+    color: #425466;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+ 
+}
+
+.auth-login-label:first-child {
+    margin-top: 30px;
+}
+
+.input-auth{
+    display: block;
+    height: 46px;
+    outline: none;
+	border: none;
+    background-color: #EDF2F7;
+    width: 100%;
+    padding-left: 15px;
+    margin-top: 8px;
+}
+
+.auth-login-forgot{
+    margin-top: 8px;
+    text-align: end;
+    color: #777E90;
+    text-align: right;
+ 
+    font-family: Verdana;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 109.091% */
+}
+
+.btn-login-container{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.login-form-btn{
+    display: block;
+    width: 100%;
+    height: 48px;
+    border: none;
+    background-color: #141416;
+    color: #FCFCFD;
+    border-radius: 90px;
+    text-align: center;
+}
+
+.aut-other-acc{
+    margin-top: 30px;
+ 
+    color: #718096;
+    text-align: center;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+    letter-spacing: -0.08px;
+}
+
+.auth-login-links{
+    margin-top: 24px;
+    justify-content: center;
+}
+
+.login-links-item{
+    justify-content: center;
+}
+
+.login-links-item:not(:last-child){
+    margin-right: 22px;
+}
+
+.auth-no-acc{
+    margin-top: 10px;
+    color: #718096;
+    text-align:center;
+    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+}
+
+.auth-no-acc-link{
+    color: #141416;
+ 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+/* create account */
+
+.create-part-container{
+    padding: 40px 168px  0 133px;
+    
+}
+.create-title{
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.create-text{
+    margin: 0;
+    margin-bottom: 34px;
+}
+
+.create-auth{
+    margin-bottom: 10px;
+}
+
+.btn-login-container{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.create-login-links{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.create-other-acc{
+    margin: 0;
+    margin-bottom: 15px;
+}
