@@ -96,21 +96,21 @@ body {
     margin-bottom: 80px;
     background-color: #FCFCFD;
     display: inline-block;
-    width: 178px;
-    height: 66px;
+    width: 234px;
+    height: 61px;
     border-radius: 90px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .wrapper-image-icon{
-    padding-left: 102px;
+    padding-left: 62px;
     padding-top: 52px;
 }
  
 .icon-star{
-    margin-right: 5px;
+ 
 }
 
 .auth-image-descr{
@@ -122,14 +122,11 @@ body {
 
 .auth-image-title{
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 200px;
     color: #fff;
 }
-.auth-image-text{
-    margin: 0;
-    margin-bottom: 135px;
-    color: #fff;
-}
+ 
+ 
 .fig{
     margin: 0;
 
@@ -279,7 +276,7 @@ body {
 }
 
 .create-auth{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .btn-login-container{
@@ -295,4 +292,14 @@ body {
 .create-other-acc{
     margin: 0;
     margin-bottom: 15px;
+}
+
+.create-login-requirement{
+    color: #718096;
+    font-feature-settings: 'clig' off, 'liga' off;
+ 
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; 
 }
