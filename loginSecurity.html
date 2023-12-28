@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examinatus</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins:wght@400;500&family=Roboto:wght@400;700&family=Rubik:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container flex">
+                <a href="" class="logo">
+                    <img src="img/main-logo.svg" alt="логотип">
+                </a>
+                <nav class="header-nav nav">
+                    <ul class="header-list list-reset flex">
+                        <li class="header-list-item"><a href="">Главная</a></li>
+                        <li class="header-list-item"><a href=""> О нас</a></li>
+                        <li class="header-list-item"><a href="">FAQ</a></li>
+                        <li class="header-list-item"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button id="burger" class="btn btn-auth btn-reset flex">
+                    <img src="img/user.svg" alt="пользователь">
+                    <img src="img/exit.svg" alt="выйти">
+                </button>
+            </div>
+        </div>
+        <section id="menu" class="profile-nav display_none">
+            <h2>Nick Name</h2>
+            <ul>
+                <li class="menu__item flex" ><img src="img/person.svg"><a href="#">Personal info</a></li>
+                <li class="menu__item flex" ><img src="img/lock.svg"><a href="#">Login and security</a></li>
+                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">My tests</a></li>
+                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">Create a test</a></li>
+                <li class="menu__item flex" ><img src="img/bulb.svg"><button>Dark theme</button></li>
+                <li class="lastone flex"><img src="img/signout.svg"><a href="#">Log Out</a></li>
+            </ul>
+        </section>
+    </header>   
+    <main class="loginAndSecurity">
+        <div class="container">
+            <div class="loginAndSecurity__container flex">
+                <section class="inner-nav">
+                    <ul class="flex">
+                        <li class="firstone"><img src="img/person.svg"><a href="#">Personal info</a></li>
+                        <li><img src="img/lock.svg"><a href="#">Login and security</a></li>
+                        <li><img src="img/articles20.svg"><a href="#">My tests</a></li>
+                        <li><img src="img/articles20.svg"><a href="#">Create a test</a></li>
+                    </ul>
+                </section>
+                <div class="loginAndSecurity__wrapper flex">
+                    <h2 class="loginAndSecurity__title">Login and security</h2>
+                    <div class="loginAndSecurity__login  flex">
+                        <h2 class="loginAndSecurity__login-title">Login</h2>
+                        <div class="loginAndSecurity__login-wrap flex">
+                            <div>
+                                <h3 class="loginAndSecurity__password">Password</h3>
+                                <span class="loginAndSecurity__span">Last updated 1 month ago</span>
+                            </div>
+                            <button class="btn__updatePassword btn-reset">Update password</button>
+                        </div>
+                    </div>
+                    <div class="loginAndSecurity__social flex">
+                        <h2 class="loginAndSecurity__login-title">Social accounts</h2>
+                        <div class="loginAndSecurity__social-wrap flex">
+                            <div class="loginAndSecurity__vk-wrap flex">
+                                <div>
+                                    <h3 class="loginAndSecurity__vk">Vkontakte</h3>
+                                    <span>Not connected</span>
+                                </div>
+                                <button class="btn__connect btn-reset">Connect</button>                                        
+                            </div>
+                            <div class="loginAndSecurity__apple-wrap flex">
+                                <div>
+                                    <h3 class="loginAndSecurity__apple">Apple account</h3>
+                                    <span>Not connected</span>
+                                </div>
+                                <button class="btn__connect btn-reset">Connect</button>                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loginAndSecurity__history flex">
+                        <h2 class="loginAndSecurity__login-title">Device history</h2>
+                        <ul class="loginAndSecurity__history-list flex list-reset">
+                            <li class="history__item flex">
+                                <div>
+                                    <h3 class="history__item-title">Session</h3>
+                                    <span>May 14, 2021 at 08:36pm</span>
+                                </div>
+                                <button class="btn-reset history__item-btn">Log out device</button>
+                            </li>
+                            <li class="history__item flex">
+                                <div>
+                                    <h3 class="history__item-title">macOs Big Sur. Chrome</h3>
+                                    <span>May 14, 2021 at 08:36pm</span>
+                                </div>
+                                <button class="btn-reset history__item-btn">Log out device</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <h3 class="footer__title">Sweetdeli</h3>
+            <ul class="footer__list list-reset flex">
+                <li class="footer__item"><a href="" class="footer__link">Contact us</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Products</a></li>
+                <li class="footer__item"><a href="" class="footer__link">About</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

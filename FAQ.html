@@ -6,7 +6,6 @@
     <title>Examinatus</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,26 +26,47 @@
                         <li class="header-list-item"><a href="">Контакты</a></li>
                     </ul>
                 </nav>
-                <button id="burger" class="btn btn-auth btn-reset flex">
+                <button class="btn btn-auth btn-reset flex">
                     <img src="img/user.svg" alt="пользователь">
                     <img src="img/exit.svg" alt="выйти">
                 </button>
             </div>
         </div>
-        <section id="menu" class="profile-nav display_none">
-            <h2>Nick Name</h2>
-            <ul>
-                <li class="menu__item flex" ><img src="img/person.svg"><a href="#">Personal info</a></li>
-                <li class="menu__item flex" ><img src="img/lock.svg"><a href="#">Login and security</a></li>
-                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">My tests</a></li>
-                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">Create a test</a></li>
-                <li class="menu__item flex" ><img src="img/bulb.svg"><button>Dark theme</button></li>
-                <li class="lastone flex"><img src="img/signout.svg"><a href="#">Log Out</a></li>
-            </ul>
-        </section>
     </header>   
-    <main class="home-main">
+    <main class="main">
+      <div class="container">
+        <div class="FAQ__container">
+          <h1 class="FAQ__title">FAQ</h1>
+          <div class="FAQ__constructor-wrapper flex">
+            <div class="constructor__left flex">
 
+              <div class="plus-wrap">
+                <span class="plus"></span>
+              </div>
+              
+              <div class="plus-wrap">
+                <span class="minus"></span>
+              </div>
+
+              <div class="plus-wrap">
+                <span class="plus"></span>
+              </div>
+
+              <div class="plus-wrap">
+                <span class="plus"></span>
+              </div>
+
+            </div>
+            <div class="constructor__right">
+              <p class="constructor__text">
+                Конструктор тестов, в&nbsp;котором будет функция проверки бумажного бланка ответов с&nbsp;фото, как на&nbsp;ЕГЭ. 
+                Преподаватель сможет создать тест как с&nbsp;возможностью прохождения онлайн, 
+                так и&nbsp;с&nbsp;требованием предоставления ответов на&nbsp;бланке, то&nbsp;есть сервис будет полезен и&nbsp;для дистанционного, и&nbsp;для очного обучения.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
         <div class="footer__container">
