@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examinatus</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Open+Sans:wght@400;700&family=Poppins:wght@500&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container flex">
+                <a href="" class="logo">
+                    <img src="img/main-logo.svg" alt="логотип">
+                </a>
+                <nav class="header-nav nav">
+                    <ul class="header-list list-reset flex">
+                        <li class="header-list-item"><a href="">Главная</a></li>
+                        <li class="header-list-item"><a href=""> О нас</a></li>
+                        <li class="header-list-item"><a href="">FAQ</a></li>
+                        <li class="header-list-item"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button id="burger" class="btn btn-auth btn-reset flex">
+                    <img src="img/user.svg" alt="пользователь">
+                    <img src="img/exit.svg" alt="выйти">
+                </button>
+            </div>
+        </div>
+        <section id="menu" class="profile-nav display_none">
+            <h2>Nick Name</h2>
+            <ul>
+                <li class="menu__item flex" ><img src="img/person.svg"><a href="#">Personal info</a></li>
+                <li class="menu__item flex" ><img src="img/lock.svg"><a href="#">Login and security</a></li>
+                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">My tests</a></li>
+                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">Create a test</a></li>
+                <li class="menu__item flex" ><img src="img/bulb.svg"><button>Dark theme</button></li>
+                <li class="lastone flex"><img src="img/signout.svg"><a href="#">Log Out</a></li>
+            </ul>
+        </section>
+    </header>   
+    <main class="createTest">
+        <div class="container">
+            <div class="createTest__container flex">
+                <section class="inner-nav">
+                    <ul class="flex">
+                        <li class="firstone"><img src="img/person.svg"><a href="#">Personal info</a></li>
+                        <li><img src="img/lock.svg"><a href="#">Login and security</a></li>
+                        <li><img src="img/articles20.svg"><a href="#">My tests</a></li>
+                        <li><img src="img/articles20.svg"><a href="#">Create a test</a></li>
+                    </ul>
+                </section>
+                <div class="testInfo flex">
+                    <form>
+                    <div class="createTest__wrap Question1 flex">
+                        <h2 class="createTest__title">Create a test</h2> 
+                        <ul class="testInfo__list list-reset flex">
+                            <div class="testInfo__name flex">
+                                <h4 class="personalInfo__title4">1 Question</h4>
+                                <input class="inputOfname" type="text" name="login" placeholder="Enter question text">
+                            </div>
+                            <h4 class="personalInfo__title4 createTest__title2">Answer</h4>
+                            <li class="nameInfo__item flex">
+
+                                <input class="inputOfLogin" type="text" name="login" placeholder="Enter the answer">
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn-reset view-profile update">Next</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <h3 class="footer__title">Examinatus</h3>
+            <ul class="footer__list list-reset flex">
+                <li class="footer__item">
+                    <a href="" class="footer__link">Contact us</a>
+                    <a href="" type="email" class="footer__link">urfu@gmail.com</a>
+                    <a href="" type="tel" class="footer__link">+7-992-000-90-00</a>
+                    <a href="" class="footer__link">Mira street, 19, Ekaterinburg</a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link-green">Products</a>
+                    <a href="" class="footer__link footer__link-green">Create a test</a>
+                    <a href="" class="footer__link footer__link-green">Solve the test by <br> downloading the <br> form</a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link">About</a>
+                    <a href="" class="footer__link">Baltika Team</a>
+                    <a href="" class="footer__link">Urfu students</a>
+                    <a href="" class="footer__link">Website for <br> creating a test</a>
+                </li>
+                <span class="copyright">Copyright © 2023. All rights reserved.</span>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examinatus</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins:wght@400;500&family=Roboto:wght@400;700&family=Rubik:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container flex">
+                <a href="" class="logo">
+                    <img src="img/main-logo.svg" alt="логотип">
+                </a>
+                <nav class="header-nav nav">
+                    <ul class="header-list list-reset flex">
+                        <li class="header-list-item"><a href="">Главная</a></li>
+                        <li class="header-list-item"><a href=""> О нас</a></li>
+                        <li class="header-list-item"><a href="">FAQ</a></li>
+                        <li class="header-list-item"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button id="burger" class="btn btn-auth btn-reset flex">
+                    <img src="img/user.svg" alt="пользователь">
+                    <img src="img/exit.svg" alt="выйти">
+                </button>
+            </div>
+        </div>
+        <section id="menu" class="profile-nav display_none">
+            <h2>Nick Name</h2>
+            <ul>
+                <li class="menu__item flex" ><img src="img/person.svg"><a href="#">Personal info</a></li>
+                <li class="menu__item flex" ><img src="img/lock.svg"><a href="#">Login and security</a></li>
+                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">My tests</a></li>
+                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">Create a test</a></li>
+                <li class="menu__item flex" ><img src="img/bulb.svg"><button>Dark theme</button></li>
+                <li class="lastone flex"><img src="img/signout.svg"><a href="#">Log Out</a></li>
+            </ul>
+        </section>
+    </header>   
+    <main class="personalInfo">
+        <div class="container">
+            <div class="personalInfo__container flex">
+                <section class="inner-nav">
+                    <ul class="flex">
+                        <li class="firstone"><img src="img/person.svg"><a href="#">Personal info</a></li>
+                        <li><img src="img/lock.svg"><a href="#">Login and security</a></li>
+                        <li><img src="img/articles20.svg"><a href="#">My tests</a></li>
+                        <li><img src="img/articles20.svg"><a href="#">Create a test</a></li>
+                    </ul>
+                </section>
+                <div class="profileInfo flex">
+                    <div class="firstBlock flex">
+                        <h2 class="profileInfo__title">Personal info</h2>
+                        <div>
+                            <button class="btn-reset view-profile">View profile</button>
+                        </div>
+                    </div>
+                    <div class="accountInfo__wrap flex">
+                        <h3 class="accountInfo__title">Account info</h3>
+                        <ul class="accountInfo__list list-reset flex">
+                            <li class="accountInfo__item flex">
+                                <h4 class="personalInfo__title4">DISPLAY NAME</h4>
+                                <input class="inputOfLogin" type="text" name="login" placeholder="Enter your display name">
+                            </li>
+                            <li class="accountInfo__item flex">
+                                <h4 class="personalInfo__title4">REAL NAME</h4>
+                                <input class="inputOfLogin" type="text" name="login" placeholder="PHAM TRAN LAN CAM NGOC">
+                            </li>
+                            <li class="accountInfo__item flex">
+                                <h4 class="personalInfo__title4">PHONE</h4>
+                                <input class="inputOfLogin" type="text" name="login" placeholder="Phone number">
+                            </li>
+                            <li class="accountInfo__item flex">
+                                <h4 class="personalInfo__title4">EMAIL</h4>
+                                <input class="inputOfLogin" type="text" name="login" placeholder="Enter your Email">
+                            </li>
+                            <div class="accountInfo__adress flex">
+                                <h4 class="personalInfo__title4">YOUR ADRESS</h4>
+                                <input class="inputOfadress" type="text" name="login" placeholder="улица Мира,19, Екатеринбург, Свердловская область">
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="personalInfo__social-wrap">
+                        <h4 class="personalInfo__social-title">Social</h4>
+                        <div class="personalInfo__social-block flex">
+                            <div class="personalInfo__web">    
+                                <h4 class="personalInfo__title4">WEBSITE</h4>
+                                <input class="inputOfLogin input__web" type="text" name="login" placeholder="Your site URL">
+                            </div>
+                            <div class="personalInfo__vk ">    
+                                <h4 class="personalInfo__title4">VKONTAKTE</h4>
+                                <div class="verify-wrap flex">
+                                    <input class="inputOfLogin input__verify" type="text" name="login" placeholder="@id00000000">
+                                    <button class="btn-reset view-profile verify__btn">Verify account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-reset view-profile update">Update profile</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <h3 class="footer__title">Sweetdeli</h3>
+            <ul class="footer__list list-reset flex">
+                <li class="footer__item"><a href="" class="footer__link">Contact us</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Products</a></li>
+                <li class="footer__item"><a href="" class="footer__link">About</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
