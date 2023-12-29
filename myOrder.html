@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examinatus</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Open+Sans:wght@400;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container flex">
+                <a href="" class="logo">
+                    <img src="img/main-logo.svg" alt="логотип">
+                </a>
+                <nav class="header-nav nav">
+                    <ul class="header-list list-reset flex">
+                        <li class="header-list-item"><a href="">Главная</a></li>
+                        <li class="header-list-item"><a href=""> О нас</a></li>
+                        <li class="header-list-item"><a href="">FAQ</a></li>
+                        <li class="header-list-item"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button id="burger" class="btn btn-auth btn-reset flex">
+                    <img src="img/user.svg" alt="пользователь">
+                    <img src="img/exit.svg" alt="выйти">
+                </button>
+            </div>
+        </div>
+        <section id="menu" class="profile-nav display_none">
+            <h2>Nick Name</h2>
+            <ul>
+                <li class="menu__item flex" ><img src="img/person.svg"><a href="#">Personal info</a></li>
+                <li class="menu__item flex" ><img src="img/lock.svg"><a href="#">Login and security</a></li>
+                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">My tests</a></li>
+                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">Create a test</a></li>
+                <li class="menu__item flex" ><img src="img/bulb.svg"><button>Dark theme</button></li>
+                <li class="lastone flex"><img src="img/signout.svg"><a href="#">Log Out</a></li>
+            </ul>
+        </section>
+    </header>   
+    <main class="myOrder">
+        <div class="container">
+            <div class="myOrder__container flex">
+                <section class="inner-nav">
+                    <ul class="flex">
+                        <li class="firstone"><img src="img/person.svg"><a href="#">Personal info</a></li>
+                        <li><img src="img/lock.svg"><a href="#">Login and security</a></li>
+                        <li><img src="img/articles20.svg"><a href="#">My tests</a></li>
+                        <li><img src="img/articles20.svg"><a href="#">Create a test</a></li>
+                    </ul>
+                </section>
+                 <div class="myOrder__wrapper flex">
+                    <div class="myOrder__tests">
+                      <h2 class="myOrder__title">Tests in review</h2>
+                      <ul class="tests__list list-reset flex">
+                        <li class="tests__item">
+                          <h4 class="order__title">#Order 123456</h4> 
+                          <div class="tests__block flex">
+                            <img src="img/clock.svg" alt="" class="tests__icon">
+                            <div class="tests__time-wrap flex">
+                              <span>Time until delivery</span>
+                              <time>35 min</time>
+                            </div>
+                            <button class="tests__btn btn-reset">Execute</button>
+                          </div>
+                          <div class="tests__progress flex">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>  
+                        </li>
+                        <li class="tests__item">
+                          <h4 class="order__title">#Order 11112</h4>   
+                          <div class="tests__block flex">
+                            <img src="img/clock.svg" alt="" class="tests__icon">
+                            <div class="tests__time-wrap flex">
+                              <span>Time until delivery</span>
+                              <time>60 min</time>
+                            </div>
+                            <button class="tests__btn btn-reset">Execute</button>
+                          </div>
+                          <div class="tests__progress flex">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>    
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="myOrder__scored">
+                      <h2 class="myOrder__title">Scored tests</h2>
+                      <ul class="scored__list list-reset flex">
+                        <li class="scored__item">
+                          <div class="order__status-wrap flex">
+                            <h4 class="order__title">Order #14256</h4>
+                            <div><span class="scored__status">Completed</span></div>
+                          </div>
+                          <div class="scored__time flex"> 
+                              <img src="img/calendar.svg" alt="">
+                              <span class="scored__time-date">September 16, 2023</span>
+                              <img src="img/order-time.svg" alt="">
+                              <span class="scored__time-oclok">11:54 PM</span> 
+                          </div>
+                          <div class="scored__btn-wrap flex">
+                            <button class="scored__details-btn btn-reset">Details</button>
+                            <button class="btn-reset scored__help-btn">Get help</button>
+                          </div>
+                        </li>
+                        <li class="scored__item">
+                          <div class="order__status-wrap flex">
+                            <h4 class="order__title">Order #32561</h4>  
+                            <div><span class="scored__status">Canceled</span></div>
+                          </div>
+                          <div class="scored__time flex">
+                            <img src="img/calendar.svg" alt="">
+                            <span class="scored__time-date">August 29, 2023</span>
+                            <img src="img/order-time.svg" alt="">
+                            <span class="scored__time-oclok">12:06 AM</span>
+                          </div>
+                          <div class="scored__btn-wrap flex">
+                            <button class="scored__details-btn btn-reset">Details</button>
+                            <button class="btn-reset scored__help-btn">Get help</button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <h3 class="footer__title">Sweetdeli</h3>
+            <ul class="footer__list list-reset flex">
+                <li class="footer__item"><a href="" class="footer__link">Contact us</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Products</a></li>
+                <li class="footer__item"><a href="" class="footer__link">About</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
