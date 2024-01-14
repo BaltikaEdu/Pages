@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examinatus</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Open+Sans:wght@400;700&family=Poppins:wght@500&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container flex">
+                <a href="" class="logo">
+                    <img src="img/main-logo.svg" alt="логотип">
+                </a>
+                <nav class="header-nav nav">
+                    <ul class="header-list list-reset flex">
+                        <li class="header-list-item"><a href="">Главная</a></li>
+                        <li class="header-list-item"><a href=""> О нас</a></li>
+                        <li class="header-list-item"><a href="">FAQ</a></li>
+                        <li class="header-list-item"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button id="burger" class="btn btn-auth btn-reset flex">
+                    <img src="img/user.svg" alt="пользователь">
+                    <img src="img/exit.svg" alt="выйти">
+                </button>
+            </div>
+        </div>
+        <section id="menu" class="profile-nav display_none">
+            <h2>Nick Name</h2>
+            <ul>
+                <li class="menu__item flex" ><img src="img/person.svg"><a href="#">Personal info</a></li>
+                <li class="menu__item flex" ><img src="img/lock.svg"><a href="#">Login and security</a></li>
+                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">My tests</a></li>
+                <li class="menu__item flex" ><img src="img/articles20.svg"><a href="#">Create a test</a></li>
+                <li class="menu__item flex" ><img src="img/bulb.svg"><button>Dark theme</button></li>
+                <li class="lastone flex"><img src="img/signout.svg"><a href="#">Log Out</a></li>
+            </ul>
+        </section>
+    </header>   
+    <main class="help">
+        <div class="container">
+            <div class="help__container">
+                <h1 class="help__title">Get help </h1>
+                <ul class="help__list list-reset flex">
+                    <li class="help__item">
+                      <h2 class="help__item-title">Что означают символы?</h2>
+                      <ul class="list-reset help__item-list flex">
+                        <li class=" ">
+                          <p class="help__item-text">
+                            <img src="img/danger.svg" alt="">
+                            -   Ошибка в проверке бланка. Попробуйте загрузить бланк заново, проверьте качество файла  и соблюдение правил заполнения ячеек.
+                          </p>
+                        </li>
+                        <li class=" ">
+                          <p class="help__item-text">
+                            <img src="img/check.svg" alt="">
+                            -   На проверке. Если проверка не выполняется долгое время, попробуйте загрузить бланк заново, проверьте соединение с интернетом.
+                          </p>
+                        </li>
+                        <li class=" ">
+                          <p class="help__item-text">
+                            <img src="img/done.svg" alt="">
+                            -   Работа успешно проверена. Оценка выставлена в правом углу карточки,  а ошибки можно посмотреть в нижней части карточки на черной панели. 
+                          </p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="help__item">
+                      <h2 class="help__item-title">Почему проверка занимает много времени?</h2>
+                      <p class="help__item-text">
+                        Проверка бланков занимает много времени из-за большого объема данных, выполняемые программой, которая считывает ответы, сложности вопросов, необходимости высокой точности и надежности, а также потребности в анализе и контроле качества данных.
+                      </p>
+                    </li>
+                    <li class="help__item">
+                      <h2 class="help__item-title">Почему так мало баллов? </h2>
+                      <p class="help__item-text">
+                        Возможно бланк заполняли не по образцу или на бланке была грязь. Если вас не устраивает ваша оценка, то обратитесь к своему преподавателю или учителю.
+                      </p>
+                    </li>
+                    <li class="help__item">
+                      <h2 class="help__item-title">Как узнать свою оценку за тест?</h2>
+                      <p class="help__item-text">
+                        Все оценки за тесты вы можете узнать только у своего преподавателя или учителя.
+                      </p>
+                    </li>
+                    <p class="help__item-text">
+                      Если у вас еще остались вопросы, то вы их можете прислать к нам на почту: urfu@gmail.com . И мы обязятаельно ответим в течении двух суток.                    </p>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <h3 class="footer__title">Examinatus</h3>
+            <ul class="footer__list list-reset flex">
+                <li class="footer__item">
+                    <a href="" class="footer__link">Contact us</a>
+                    <a href="" type="email" class="footer__link">urfu@gmail.com</a>
+                    <a href="" type="tel" class="footer__link">+7-992-000-90-00</a>
+                    <a href="" class="footer__link">Mira street, 19, Ekaterinburg</a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link footer__link-green">Products</a>
+                    <a href="" class="footer__link footer__link-green">Create a test</a>
+                    <a href="" class="footer__link footer__link-green">Solve the test by <br> downloading the <br> form</a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link">About</a>
+                    <a href="" class="footer__link">Baltika Team</a>
+                    <a href="" class="footer__link">Urfu students</a>
+                    <a href="" class="footer__link">Website for <br> creating a test</a>
+                </li>
+                <span class="copyright">Copyright © 2023. All rights reserved.</span>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
